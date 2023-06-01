@@ -1,7 +1,7 @@
-import React from 'react';
+/*import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import NotFound from 'components/NotFound';
-import Main from 'components/Main';
+import Main from 'components/StartPage';
 import Login from 'components/Login';
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import user from 'reducers/user';
@@ -35,4 +35,4 @@ export const App = () => {
 /// npm i @reduxjs/toolkit
 /// npm i react-router-dom
 
-
+*/
