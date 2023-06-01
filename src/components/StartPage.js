@@ -95,7 +95,7 @@ function Form() { // this is a component that returns a form
                       onChange={(e) => setPlaceOfBirth(e.target.value)}
                       required />
 
-                  <button type="submit">Submit</button>
+                  <button id="NatalBtn" type="submit">Submit</button>
               </form></form>
           </div></>
   );
