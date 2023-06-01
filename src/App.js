@@ -1,14 +1,23 @@
 import React from 'react';
-import StartPage from './components/StartPage';
-import NatalPage from './components/NatalPage';
+import StartPage from './Pages/StartPage';
+import NatalPage from './Pages/NatalPage';
 import Footer from 'components/Footer';
+import LanguageButton from 'components/LangueButton';
+import { Routes, Route } from "react-router-dom";
 
 
 export const App = () => {
 
-  return (
-    <><StartPage /><Footer /></>
-    );
+	return (
+		<>
+			<LanguageButton />
+			<Routes>
+				<Route path="/" element={<StartPage />}/>
+				<Route path="/natal" element={<NatalPage />}/>
+			</Routes>
+			<Footer />
+		</>
+	);
 }
 
 

@@ -8,70 +8,12 @@
 }*/
 
 body {
-  margin: 0; 
-  padding: 0;
- /* font-family: 'CustomFont', jost; */
- font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
--webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;
-background-color: #E8E2D2;
-text-align: -webkit-center;
-}
-
-
-/* PAGE 1 STARTPAGE*/
-
-/* Enter details */
-div.P1Text {
-display: flex;
-flex-direction: column;
-align-items: center;
-}
-
-/* Enter boxes  */
-div.P1Box { 
-display: flex;
-justify-content: center;
-width: 50%;
-background: #6A5871;
-color: white;
-padding: 8px;
-padding-bottom: 20px;
-padding-right: 0px;
-padding-left: 0;
-}
-/*1 page submit button*/
-button#NatalBtn {
-  cursor: pointer;
-
-}
-form {
-display: flex;
-flex-direction: column;
-gap: 6px;
-}
-/* Footer */
-footer {
-position: fixed;
-left: 0;
-bottom: 0;
-width: 100%;
-background-color: #DD9488;
-color: black;
-text-align: center;
-}
-/* Linkedin */
-.svg-icon {
-  width: 30px;
-  height: 30px;
-    background-color: transparent;
-    border: none;
-    margin-right: 30px;
-    cursor: pointer;
-    fill: rgb(28, 27, 27);
-}
-.svg-icon:hover {
-  /*fill: var(--hover-); */
-  fill: #6A5871;
-  
+	margin: 0; 
+	padding: 0;
+	/* font-family: 'CustomFont', jost; */
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: #E8E2D2;
+	text-align: -webkit-center;
 }
