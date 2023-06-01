@@ -57,7 +57,7 @@ function Form() { // this is a component that returns a form
 
   return (
     <><div className='P1Text'>
-          <h1>Enter your details plzzzzz</h1>
+          <h1>Enter your details</h1>
           <p>Enter your name, date of birth, time of birth and place of birth to get your astrological chart 🖤</p>
       </div>
       <div className='P1Box'>

@@ -1,11 +1,13 @@
 import React from 'react';
 import StartPage from './components/StartPage';
 import NatalPage from './components/NatalPage';
+import Footer from 'components/Footer';
+
 
 export const App = () => {
 
   return (
-<StartPage />
+    <><StartPage /><Footer /></>
     );
 }
 
