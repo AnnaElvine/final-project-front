@@ -30,8 +30,8 @@ const StartPage = () => {
 	return (
 		<>
 			<div className='P1Text'>
-				<h1>Enter your details</h1>
-				<p>Enter details to get your astrological chart 🖤</p>
+				<h1>Testing testing</h1>
+				<p>Text text text</p>
 			</div>
 			<div className='P1Box'>
 				<form onSubmit={handleSubmit} className='P1Form'>

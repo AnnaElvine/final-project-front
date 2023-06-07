@@ -4,7 +4,7 @@ import React from "react";
 const NatalPage = () => {
 	return(
 		<div className="test">
-			<div className="my">Hejsan</div>
+			<div className="my">Natal goes here :)</div>
 		</div>
 	)
 }

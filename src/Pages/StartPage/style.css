@@ -13,8 +13,9 @@
     display: flex;
     justify-content: center;
     width: 50%;
-    background: #6A5871;
-    color: white;
+    /*background: #6A5871; */
+    background-color: #e1d6e5;
+    color: rgb(25, 25, 25);
     padding: 8px;
     padding-bottom: 20px;
     padding-right: 0px;
@@ -53,22 +54,32 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #DD9488;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /*background-color: #DD9488; */
+    background: #dddddd;
     color: black;
     text-align: center;
+    gap: 50px;  
     }
+
+    p {
+    font-size: 10px;
+    }
+
     /* Linkedin */
     .svg-icon {
       width: 30px;
-      height: 30px;
-        background-color: transparent;
-        border: none;
-        margin-right: 30px;
-        cursor: pointer;
-        fill: rgb(28, 27, 27);
+      height: 15px;
+      background-color: transparent;
+      border: none;
+      margin-right: 30px;
+      cursor: pointer;
+      fill: rgb(28, 27, 27);
     }
     .svg-icon:hover {
       /*fill: var(--hover-); */
       fill: #6A5871;
-      
     }
