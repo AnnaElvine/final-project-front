@@ -2,84 +2,84 @@
 
 /* Enter details */
 .P1Text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-left: 70px;
-    }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 70px;
+  }
+  
+  /* Enter boxes  */
+  .P1Box { 
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  /*background: #6A5871; */
+  background-color: #e1d6e5;
+  color: rgb(25, 25, 25);
+  padding: 8px;
+  padding-bottom: 20px;
+  padding-right: 0px;
+  padding-left: 0px;
+  }
+  /*1 page submit button*/
+  button#NatalBtn {
+    cursor: pointer;
+  
+  }
+  form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  }
+  
+  /* langue button */
+  button#LangueBtn {
+    cursor: pointer;
+    background-color: grey;
+    color: white;
+    border: none;
+    margin-right: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    /*fill: rgb(28, 27, 27); */
+    float: right;
     
-    /* Enter boxes  */
-    .P1Box { 
-    display: flex;
-    justify-content: center;
-    width: 50%;
-    /*background: #6A5871; */
-    background-color: #e1d6e5;
-    color: rgb(25, 25, 25);
-    padding: 8px;
-    padding-bottom: 20px;
-    padding-right: 0px;
-    padding-left: 0px;
-    }
-    /*1 page submit button*/
-    button#NatalBtn {
-      cursor: pointer;
-    
-    }
-    form {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-    }
-    
-    /* langue button */
-    button#LangueBtn {
-      cursor: pointer;
-      background-color: grey;
-      color: white;
-      border: none;
-      margin-right: 30px;
-      margin-top: 30px;
-      margin-bottom: 30px;
-      cursor: pointer;
-      /*fill: rgb(28, 27, 27); */
-      float: right;
-      
-    }
-    
-    
-    /* Footer */
-    footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    /*background-color: #DD9488; */
-    background: #dddddd;
-    color: black;
-    text-align: center;
-    gap: 50px;  
-    }
+  }
+  
+  
+  /* Footer */
+  footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  /*background-color: #DD9488; */
+  background: #dddddd;
+  color: black;
+  text-align: center;
+  gap: 50px;  
+  }
 
-    p {
-    font-size: 10px;
-    }
+  p {
+  font-size: 10px;
+  }
 
-    /* Linkedin */
-    .svg-icon {
-      width: 30px;
-      height: 15px;
-      background-color: transparent;
-      border: none;
-      margin-right: 30px;
-      cursor: pointer;
-      fill: rgb(28, 27, 27);
-    }
-    .svg-icon:hover {
-      /*fill: var(--hover-); */
-      fill: #6A5871;
-    }
+  /* Linkedin */
+  .svg-icon {
+    width: 30px;
+    height: 15px;
+    background-color: transparent;
+    border: none;
+    margin-right: 30px;
+    cursor: pointer;
+    fill: rgb(28, 27, 27);
+  }
+  .svg-icon:hover {
+    /*fill: var(--hover-); */
+    fill: #6A5871;
+  }

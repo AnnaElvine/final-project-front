@@ -2,7 +2,6 @@ import React from 'react';
 import StartPage from './Pages/StartPage';
 import NatalPage from './Pages/NatalPage';
 import Footer from 'components/Footer';
-import LanguageButton from 'components/LangueButton';
 import { Routes, Route } from "react-router-dom";
 
 
@@ -10,7 +9,6 @@ export const App = () => {
 
 	return (
 		<>
-			<LanguageButton />
 			<Routes>
 				<Route path="/" element={<StartPage />}/>
 				<Route path="/natal" element={<NatalPage />}/>
