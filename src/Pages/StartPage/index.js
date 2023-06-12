@@ -12,8 +12,8 @@ import './style.css';
 const StartPage = () => { 
 	const [name, setName] = useState(''); // this is a hook and a state variable, this is a function that returns an array
 	const [dateOfBirth, setDateOfBirth] = useState(''); // this is a hook and a state variable, this is a function that returns an array
-	const [timeOfBirth, setTimeOfBirth] = useState('');
-	const [placeOfBirth, setPlaceOfBirth] = useState('');
+	/*const [timeOfBirth, setTimeOfBirth] = useState('');
+	const [placeOfBirth, setPlaceOfBirth] = useState('');*/
 
 	const handleSubmit = (e) => { // this is a function that takes an event as an argument and returns nothing 
 		e.preventDefault();
@@ -22,8 +22,8 @@ const StartPage = () => {
 		console.log({
 			name,
 			dateOfBirth,
-			timeOfBirth,
-			placeOfBirth
+			/*timeOfBirth,
+			placeOfBirth*/
 		});
 	};
 
@@ -51,7 +51,7 @@ const StartPage = () => {
 						onChange={(e) => setDateOfBirth(e.target.value)}
 						required />
 
-					<label htmlFor="timeOfBirth">Time of Birth:</label>
+					{/* <label htmlFor="timeOfBirth">Time of Birth:</label>
 					<input
 						type="time"
 						id="timeOfBirth"
@@ -65,7 +65,7 @@ const StartPage = () => {
 						id="placeOfBirth"
 						value={placeOfBirth}
 						onChange={(e) => setPlaceOfBirth(e.target.value)}
-						required />
+						required /> */}
 
 					<Link id="NatalBtn" to={`/natal`}>Submit</Link>
 				</form>
