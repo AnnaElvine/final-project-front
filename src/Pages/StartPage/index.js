@@ -26,6 +26,8 @@ const StartPage = () => {
 			placeOfBirth*/
 		});
 	};
+console.log(dateOfBirth)
+console.log(name)
 
 	return (
 		<>
@@ -67,7 +69,8 @@ const StartPage = () => {
 						onChange={(e) => setPlaceOfBirth(e.target.value)}
 						required /> */}
 
-					<Link id="NatalBtn" to={`/natal`}>Submit</Link>
+					{/* <Link id="NatalBtn" to={`/natal`}>Submit</Link> */}
+					<Link id="NatalBtn" to={`/natal/${dateOfBirth}`}>Submit</Link>
 				</form>
 			</div> 
 		</>
