@@ -5,9 +5,9 @@ import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import React, { useState } from 'react'; 
 import styled from 'styled-components';
 import './style.css';
-/* import LanguageButton from './LangueButton'; */
 
 // Styled components 
+
 
 const StartPage = () => { 
 	const [name, setName] = useState(''); // this is a hook and a state variable, this is a function that returns an array
@@ -43,8 +43,6 @@ const StartPage = () => {
 	};
 
 
-/*console.log(dateOfBirth)
-console.log(name) */
 
 	return (
 		<>
@@ -70,24 +68,8 @@ console.log(name) */
 						onChange={(e) => setDateOfBirth(e.target.value)}
 						required />
 
-					{/* <label htmlFor="timeOfBirth">Time of Birth:</label>
-					<input
-						type="time"
-						id="timeOfBirth"
-						value={timeOfBirth}
-						onChange={(e) => setTimeOfBirth(e.target.value)}
-						required />
-
-					<label htmlFor="placeOfBirth">Place of Birth:</label>
-					<input
-						type="text"
-						id="placeOfBirth"
-						value={placeOfBirth}
-						onChange={(e) => setPlaceOfBirth(e.target.value)}
-						required /> */}
-
 					{/* <Link id="NatalBtn" to={`/natal`}>Submit</Link> */}
-					{/*<Link id="NatalBtn" to={`/natal/${dateOfBirth}`}>Submit</Link> */}
+					<Link id="NatalBtn" to={`/natal/${dateOfBirth}`}>Submit</Link> 
 
 				<button type="submit">Submit</button>
 				</form>
