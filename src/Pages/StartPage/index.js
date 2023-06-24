@@ -1,5 +1,5 @@
 /*import React from 'react'; */
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import React, { useState } from 'react'; 
@@ -14,6 +14,9 @@ const StartPage = () => {
 	const [dateOfBirth, setDateOfBirth] = useState(''); // this is a hook and a state variable, this is a function that returns an array
 	/*const [timeOfBirth, setTimeOfBirth] = useState('');
 	const [placeOfBirth, setPlaceOfBirth] = useState('');*/
+	const [zodiac, setZodiac] = useState({});
+	const navigate = useNavigate();
+
 
 	const handleSubmit = (e) => { // this is a function that takes an event as an argument and returns nothing 
 		e.preventDefault();
@@ -26,7 +29,9 @@ const StartPage = () => {
 			.then((response) => response.json())
 			.then((result) => {
 			  // Handle the response from the backend
-			  console.log(result);
+			  console.log('result', result);
+			  setZodiac(result);
+			  navigate(`/natal/${dateOfBirth}`, {state:{zodiac:result, name}})
 			})
 			.catch((error) => {
 			  // Handle any errors that occur during the request
@@ -68,29 +73,16 @@ const StartPage = () => {
 						onChange={(e) => setDateOfBirth(e.target.value)}
 						required />
 
-					{/* <Link id="NatalBtn" to={`/natal`}>Submit</Link> */}
-					<Link id="NatalBtn" to={`/natal/${dateOfBirth}`}>Submit</Link> 
+					
 
 				<button type="submit">Submit</button>
 				</form>
 			</div> 
+		{/*	{zodiac && (<p>My Zodiac Sign is: {zodiac.zodiacSign}</p>)} */}
+
 		</>
 	);
 }
 
 
 export default StartPage;
-
-
-
-/*const StartPage = () => {
-
-    return (
-      <h1>Hello Mr Bond!</h1>
-
-   
-    );
-  }
-
-
-  export default StartPage; */
